@@ -10,7 +10,171 @@
   </head>
 
   <body>
+    <div class="wykop-header">
+      <div class="wykop-header-left-section">
+        <button class="menu-button">
+          <img class="menu-button-image" src="images/menu-button-white.png">
+        </button>
 
+        <div class="wykop-logo">
+          <a href="wykop.html" class="header-link">
+            <img class="wykop-logo"
+              src="data/images/wykop-logo-white.png">
+            <img class="wykop-mobile-logo"
+              src="data/images/wykop-mobile-logo-white.png">
+          </a>
+        </div>
+
+        <div class="wykop-main">
+          <a href="wykop.html" class="wykop-main-button">
+            Główna
+          </a>
+        </div>
+
+        <div class="wykop-wykopalisko">
+          <a href="wykopalisko.html" class="wykop-wykopalisko-button">
+            Wykopalisko
+            <div class="vote-box js-wykopalisko-vote-box">
+              430
+            </div>
+          </a>
+        </div>
+
+        <div class="wykop-mikroblog">
+          <a href="mikroblog.html" class="wykop-mikroblog-button">
+            Mikroblog
+          </a>
+        </div>
+      </div>
+
+      <div class="wykop-header-right-section">
+        <input class="search-bar" type="text" placeholder="Szukaj w Wykopie...">
+
+        <a class="login-button" href="login.html">
+          Zaloguj się
+        </a>
+        <a class="register-button" href="register.html">
+          Zarejestruj się
+        </a>
+
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="ad-space">
+      </div>
+
+      <div class="hity-title">
+        HITY WYKOPU
+        <button class="see-more-button">
+          Zobacz Więcej
+          <img class="arrow-right"
+            src="images/arrow-right-white.png">
+        </button>
+      </div>
+
+      <div class="hity-grid">
+        <div class="hit-article">
+          <div class="vote-box">300</div>
+          <img src="data/images/article/article-1.png">
+          <a href="article1.html">Tekst Pierwszego Artykułu
+          </a>
+        </div>
+
+        <div class="hit-article">
+          <div class="vote-box">300</div>
+          <img src="data/images/article/article-2.png">
+          <a href="article2.html">Tekst Drugiego Artykułu
+          </a>
+        </div>
+
+        <div class="hit-article">
+          <div class="vote-box">300</div>
+          <img src="data/images/article/article-3.png">
+          <a href="article3.html">Tekst Trzeciego Artykułu
+          </a>
+        </div>
+      </div>
+
+      <div class="główna-title">
+        GŁÓWNA
+        <select name="sorting" class="głowna-sorting-select">
+          <option value="newest">Najnowsze</option>
+          <option value="active">Aktywne</option>
+        </select>
+      </div>
+
+      <div class="główna-content">
+        <div class="głowna-grid">
+
+          <div class="główna-article">
+            <div class="vote-box">
+              <button>WYKOP</button>
+            </div>
+
+            <div class="główna-article-content">
+              <div class="główna-article-content-title">
+                Tytuł artykułu
+              </div>
+
+              <div class="główna-article-content-text">
+                Tekst Artykułu <!--abstract-->
+              </div>
+
+              <div class="główna-article-content-info">
+                <div class="główna-article-content-info-author">
+                  Autor Artykułu
+                </div>
+                <div class="główna-article-content-info-date">
+                  Data opublikowania na wykopie
+                </div>
+              </div>
+
+              <div class="główna-article-content-tags">
+                #tag1 #tag2 #tag3 #tag4
+              </div>
+            </div>
+
+            <div class="główna-article-imagezone">
+              <img class="główna-article-image" src="data/images/article/article-1">
+            </div>
+          </div>
+
+          <div class="główna-article">
+            <div class="vote-box">
+              <button>WYKOP</button>
+            </div>
+
+            <div class="główna-article-content">
+              <div class="główna-article-content-title">
+                Tytuł artykułu2
+              </div>
+
+              <div class="główna-article-content-text">
+                Tekst Artykułu2 <!--abstract-->
+              </div>
+
+              <div class="główna-article-content-info">
+                <div class="główna-article-content-info-author">
+                  Autor Artykułu2
+                </div>
+                <div class="główna-article-content-info-date">
+                  Data opublikowania na wykopie
+                </div>
+              </div>
+
+              <div class="główna-article-content-tags">
+                #tag1 #tag2 #tag3 #tag4
+              </div>
+            </div>
+
+            <div class="główna-article-imagezone">
+              <img class="główna-article-image" src="data/images/article/article-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="scripts/wykop.js"></script>
   </body>
