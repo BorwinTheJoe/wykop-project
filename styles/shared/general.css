@@ -1,5 +1,14 @@
+:root {
+  --blackishRGB: 248,250,252;
+  --whitishRGB: 34,34,37;
+  --whitish: #222225;
+  --blackish: #f8fafc;  
+  --porcelain: #121214;
+}
+
+
 body {
-  background-color: #0e0e0f;
+  background-color: var(--porcelain);
   color: white;
   font-family: "Open Sans",system-ui;
   width: 100%;
@@ -13,4 +22,18 @@ body {
 
 a {
   color: rgb(83, 126, 218);
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 16px;
+  background: transparent;
+  border-radius: 0 4px 4px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  background-clip: content-box;
+  border-radius: 4px;
+  background-color: rgba(var(--blackishRGB), 0.35)
 }

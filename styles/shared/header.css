@@ -2,7 +2,7 @@
   font-family: 'Open Sans', system-ui;
   width: 100%;
   position: fixed;
-  background-color: rgb(50,50,50);
+  background-color: rgb(60,60,60);
   height: 48px;
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@
 
 /*header Menu button*/
 .menu {
-  background-color: rgb(78,78,78);
+  background-color: rgb(70,70,70);
   border: none;
   border-radius: 6px;
   padding: 13px 15px 8px 15px;
@@ -74,7 +74,7 @@
   color: white;
   font-family: 'Open Sans', system-ui;
   font-size: 14px;
-  background-color: rgb(50,50,50);
+  background-color: rgb(60,60,60);
   margin-left: 6px;
   border: none;
   border-radius: 6px;
@@ -83,7 +83,7 @@
 }
 
 .główna-button:hover, .wykopalisko-button:hover, .mikroblog-button:hover{
-  background-color: rgb(80,80,80);
+  background-color: rgba(255,255,255,0.2);
 }
 
 /*wykopalisko button new counter*/
@@ -92,14 +92,14 @@
 }
 
 .new-number {
-  background-color: rgb(80,80,80);
   position: absolute;
-  top: -6px;
-  right: -4px;
+  top: -5px;
+  right: -3px;
   font-size: 12px;
-  padding: 1px 3px;
-  border-radius: 8px;
-  border: 2px solid rgb(50,50,50);
+  line-height: 16px;
+  padding: 1px 4px 0 4px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 55px rgba(255,255,255,0.2);
 }
 
 /*------------------------*/
@@ -156,7 +156,7 @@
   color: white;
   font-family: 'Open Sans', system-ui;
   font-size: 14px;
-  background-color: rgb(50,50,50);
+  background-color: rgb(60,60,60);
   margin-left: 6px;
   border: none;
   border-radius: 6px;
@@ -165,5 +165,5 @@
 }
 
 .login-button:hover, .register-button:hover {
-  background-color: rgb(80,80,80);
+  background-color: rgba(255,255,255,0.2);
 }
