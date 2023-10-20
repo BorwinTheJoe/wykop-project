@@ -1,0 +1,69 @@
+main {
+  display: inline-block;
+  width: 100%;
+}
+
+.hity-wykopu-container {
+  width: 100%;
+  height: 240px;
+}
+
+.section-title {
+  display: flex;
+  padding: 7px 2px;
+  font-size: 14px;
+}
+
+.title-text {
+  font-weight: 700;
+  color: #c1c1c3;
+}
+
+.see-more-button {
+  margin-left: 20px;
+}
+
+.hity-wykopu-articles-container {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.article {
+  position: relative;
+  width: 240px;
+  height: 100%;
+  margin-right: 15px;
+  background-color: rgb(60,60,60);
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.article-image {
+  width: 100%;
+}
+
+.comment-count {
+  position: absolute;
+  background-color: #222225;
+  border-radius: 9px;
+  border: 3px solid white;
+  padding: 5px 5px 6px 5px;
+  top: 20px;
+  left: 20px;
+  color: orange;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.on-fire-mark {
+  background-color: orange;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  height: 18px;
+  width: 18px;
+  border-radius: 10px;
+}

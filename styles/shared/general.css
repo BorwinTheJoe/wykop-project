@@ -11,12 +11,13 @@ body {
   background-color: var(--porcelain);
   color: white;
   font-family: "Open Sans",system-ui;
-  width: 100%;
   min-width: 360px;
   height: 100%;
   transition: opacity 2s ease;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 60px;
+  padding-left: 75px;
+  padding-right: 20px;
   height: 3000px;
 }
 
