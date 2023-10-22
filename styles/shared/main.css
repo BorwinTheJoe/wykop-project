@@ -37,14 +37,15 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: space-between;  
+  gap: 12px;
 }
 
 .article {
   position: relative;
-  width: 240px;
+  
   height: 100%;
-  margin-right: 15px;
+  width: 240px;
   background-color: rgb(60,60,60);
   flex-shrink: 0;
   border-radius: 8px;
@@ -58,17 +59,17 @@ main {
   position: absolute;
   background-color: #222225;
   border-radius: 9px;
-  border: 3px solid white;
+  border: 3px solid var(--blackish);
   padding: 5px 5px 6px 5px;
-  top: 20px;
-  left: 20px;
-  color: orange;
+  top: 22px;
+  left: 16px;
+  color: var(--orange);
   font-weight: bold;
   font-size: 14px;
 }
 
 .on-fire-mark {
-  background-color: orange;
+  background-color: var(--orange);
   position: absolute;
   top: 13px;
   left: 15px;
@@ -77,6 +78,7 @@ main {
   border-radius: 10px;
 }
 
+/*Zawartość Głównej części strony*/
 
 .sub-main-container {
   display: flex;
@@ -86,22 +88,43 @@ main {
 
 .główna-container {
   flex: 3;
-  background-color: gray;
 }
+
+.main-content .container {
+  margin-top: 16px;
+}
+
+.main-content .article {
+  width: 100%;
+  background-color: var(--whitish);
+  min-height: 190px;
+  border: 1px solid rgba(var(--blackishRGB), 0.05);
+  transition: 0.15s;
+  display: flex;
+}
+
+.main-content .article:hover {
+
+  border: 1px solid rgba(var(--blackishRGB), 0.15);
+}
+
+
+/*Zawartość prawej części strony*/
 
 .right-main-container {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+  align-self: stretch;
+  width: 300px;
 }
 
 .hity-tygodnia {
-  width: 100%;
-  background-color: rgba(255,255,255, 0.2);
+  background-color: var(--whitish);
   border-radius: 6px;
-  padding: 10px;
+  padding: 16px 20px;
+  width: 260px;
 }
 
 .hity-tygodnia-title {
@@ -109,17 +132,41 @@ main {
   justify-content: space-between;
   align-items: center;
   width: auto;
+  margin-bottom: 10px;
 }
 
 .hity-tygodnia-article{
-  height: 200px;
-  width: 100%;
-  margin-top: 10px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transform: translateX(-20px);
+  width: calc(100%);
+  padding: 15px 20px;
   transition: background-color 0.15s;
 }
 
+.hity-tygodnia-article .image {
+  border-radius: 4px;
+  width: 70px;
+  height: 70px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 70px;
+  flex: 0 0 70px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hity-tygodnia-article .content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 .hity-tygodnia-article:hover {
-  background-color: rgba(255,255,255, 0.4);
+  background-color: rgba(var(--blackishRGB), 0.15);
 }
 
 .hity-tygodnia-title {
