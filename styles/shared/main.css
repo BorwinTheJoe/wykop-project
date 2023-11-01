@@ -120,15 +120,18 @@ main {
   width: 300px;
 }
 
-.hity-tygodnia, .gorace-wpisy {
+.hity-tygodnia, .gorace-wpisy, .wykopalisko, .popularne-tagi, .wykop-info {
   background-color: var(--whitish);
   border-radius: 6px;
   padding: 16px 20px;
   width: 260px;
   margin-bottom: 6px;
+  font-weight: 700;
+  color: #c1c1c3;
+  font-size: 14px;
 }
 
-.hity-tygodnia-title {
+.hity-tygodnia-title, .gorace-wpisy-title, .wykopalisko-title, .popularne-tagi-title, .wykop-info-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,12 +173,6 @@ main {
   background-color: rgba(var(--blackishRGB), 0.05);
 }
 
-.hity-tygodnia-title {
-  font-weight: 700;
-  color: #c1c1c3;
-  font-size: 14px;
-}
-
 .pokaz-wiecej {
   display: flex;
   border: 1px solid var(--blackish);
@@ -185,4 +182,5 @@ main {
   font-size: 12px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
