@@ -120,11 +120,12 @@ main {
   width: 300px;
 }
 
-.hity-tygodnia {
+.hity-tygodnia, .gorace-wpisy {
   background-color: var(--whitish);
   border-radius: 6px;
   padding: 16px 20px;
   width: 260px;
+  margin-bottom: 6px;
 }
 
 .hity-tygodnia-title {
@@ -173,4 +174,15 @@ main {
   font-weight: 700;
   color: #c1c1c3;
   font-size: 14px;
+}
+
+.pokaz-wiecej {
+  display: flex;
+  border: 1px solid var(--blackish);
+  border-radius: 4px;
+  height: 28px;
+  padding: 0 16px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
 }
