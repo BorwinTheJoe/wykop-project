@@ -1,0 +1,66 @@
+.page-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.block {
+  display: flex;
+  flex-grow: 1;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--whitish);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.page-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.new-wpis-inputs {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.new-wpis-input {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.new-wpis-input textarea {
+  width: 60%;
+  background-color: var(--porcelain);
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  color: var(--blackish);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.add-wpis-button {
+  margin-top: 20px;
+}
+
+.add-wpis-button button {
+  background-color: var(--porcelain);
+  color: var(--blackish);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 18px;
+  font-size: 18px;
+  transition: background-color 0.15s;
+}
+
+.add-wpis-button button:hover {
+  background-color: rgba(255,255,255,0.3);
+}
