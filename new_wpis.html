@@ -106,44 +106,44 @@
     <main>
       <div class="page-container">
         <!--Modify div block into a Form for form data processing scripts?-->
-        <div class="block">
+        <form class="block" name="new-wpis" method="GET" action="form-handler . url">
           <div class="page-title">Stwórz Nowy Wpis</div>
 
           <div class="new-wpis-inputs">
             <div class="new-wpis-input">
               <div class="input-field-name">Tytuł</div>
-              <textarea rows="5"></textarea>
+              <textarea name="title" rows="5"></textarea>
             </div>
 
             <!--Change into image upload space, or Remove-->
             <div class="new-wpis-input">
               <div class="input-field-name">Obraz</div>
-              <textarea rows="5"></textarea>
+              <textarea name="image" rows="5"></textarea>
             </div>
 
             <!--Somehow use link to pull or reference the Original article's Image?-->
             <div class="new-wpis-input">
               <div class="input-field-name">Link</div>
-              <textarea rows="5"></textarea>
+              <input name="url" type="url">
             </div>
 
             <div class="new-wpis-input">
               <div class="input-field-name">Tagi</div>
-              <textarea rows="2"></textarea>
+              <textarea name="tags" rows="2"></textarea>
             </div>
 
             <!--Placeholder for inputting Usernames when creating Articles-->
             <div class="new-wpis-input">
               <div class="input-field-name">Nazwa Użytkownika</div>
-              <textarea rows="1"></textarea>
+              <textarea name="username" rows="1"></textarea>
             </div>
           </div>
 
           <div class="add-wpis-button">
-            <button>Dodaj Wpis</button>
+            <input type="submit" value="Dodaj Wpis">
 
           </div>
-        </div>
+        </form>
       </div>
     </main>
   </body>

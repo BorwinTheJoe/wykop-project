@@ -36,11 +36,11 @@
   flex-grow: 1;
 }
 
-.new-wpis-input textarea {
+.new-wpis-input textarea, .new-wpis-input input {
   width: 60%;
   background-color: var(--porcelain);
   border: none;
-  padding: 16px;
+  padding: 8px;
   border-radius: 10px;
   color: var(--blackish);
   font-size: 18px;
