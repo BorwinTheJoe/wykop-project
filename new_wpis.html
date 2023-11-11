@@ -105,8 +105,8 @@
 
     <main>
       <div class="page-container">
-        <!--Modify div block into a Form for form data processing scripts?-->
-        <form class="block" name="new-wpis" method="GET" action="form-handler . url">
+        <!--Figure out server-side handling of forms-->
+        <form class="block" name="new-wpis" method="post" action="form-handler . url">
           <div class="page-title">Stwórz Nowy Wpis</div>
 
           <div class="new-wpis-inputs">
@@ -118,7 +118,7 @@
             <!--Change into image upload space, or Remove-->
             <div class="new-wpis-input">
               <div class="input-field-name">Obraz</div>
-              <textarea name="image" rows="5"></textarea>
+              <input type="file" name="image" accept="image/*"></textarea>
             </div>
 
             <!--Somehow use link to pull or reference the Original article's Image?-->
@@ -127,6 +127,7 @@
               <input name="url" type="url">
             </div>
 
+            <!--Remember to separate tags correctly-->
             <div class="new-wpis-input">
               <div class="input-field-name">Tagi</div>
               <textarea name="tags" rows="2"></textarea>
@@ -139,6 +140,7 @@
             </div>
           </div>
 
+          <!--Add Reset Form Button?-->
           <div class="add-wpis-button">
             <input type="submit" value="Dodaj Wpis">
 
