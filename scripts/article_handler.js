@@ -14,3 +14,8 @@
 //import method for removing users from the database
 //import method for adding articles to author's profiles
 //import method for removing articles from Author's profiles
+
+function addArticle(title, image, link, tags, username) {
+  
+  return 0;
+}
