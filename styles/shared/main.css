@@ -95,12 +95,51 @@ main {
 }
 
 .main-content .article {
-  width: 100%;
+  width: auto;
+  padding: 20px;
   background-color: var(--whitish);
-  min-height: 190px;
+  
   border: 1px solid rgba(var(--blackishRGB), 0.05);
   transition: 0.15s;
   display: flex;
+  margin-top: 10px;
+}
+
+.article-rating {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.article-rating .comment-count {
+  left: auto;
+  right: auto;
+}
+
+.article-text {
+  width: 70%;
+}
+.article-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+.article-abstract {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+.article-source {
+  margin-top: 10px;
+  opacity: 0.4;
+  font-size: 14px;
+}
+.article-tags {
+  margin-top: 10px;
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.article-image-container {
+  width: 20%;
 }
 
 .main-content .article:hover {
